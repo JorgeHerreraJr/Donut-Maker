@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="/src/css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 Project</title>
+</head>
+<header class="header">
+
+    <button id="modal-open">Hey!! Click On Me!</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h1 class="header__gameInfo"> About This Game </h1>
+            <p class="header__gameInspiration"><a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">This
+                </a>is the inspiration for this the game</p>
+            <p class="header__contacts">Feel free to contact me through <a href="https://github.com/JorgeHerreraJr"
+                    target="_blank">Here! </a> and while your're at it, check <a
+                    href="https://jorgeherrerajr.github.io/" target="_blank">this </a> out!</p>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="images">
+        <img class="images__background-photo" src="/images/cartoon_donuts_pattern-.jpg">
+        <img class="images__donutImage" src="images/donut.png" onclick="add()">
+    </div>
+
+
+    <section class="middle-page" <section class="buttons">
+        <div class="buttons__counter" id="donuts">0</div>
+
+        <div class="center">
+            <div class="buttons__counter" id="multipliers">0</div>
+            <button class="buttons__donutMultiplier" onclick="upgradePerClick()" onmousedown="addMultipliers()"> Get
+                Your Donut Multiplier!: <span id=clickcost></span></button>
+
+
+            <div class="buttons__counter" id="auto-clickers">0</div>
+            <button class="buttons__donutClicker" onclick="addClickers()">Get an Auto Clicker so you can rest your
+                finger!: <span id=secondcost></span></button>
+        </div>
+    </section>
+
+
+<body>
+    <audio id="background-audio" controls autoplay loop>
+        <source src="sounds/Twin Musicom - Hat the Jazz.mp3">Your Browser Does Not Support The Audio Element.
+    </audio>
+    <button id="reset" onclick="reset()">Reset Your Progress</button>
+    <div class="container">
+        <div class="anchor"></div>
+    </div>
+    <script src="/src/donut-maker.js"></script>
+</body>
+</section>
+</main>
+</html>
